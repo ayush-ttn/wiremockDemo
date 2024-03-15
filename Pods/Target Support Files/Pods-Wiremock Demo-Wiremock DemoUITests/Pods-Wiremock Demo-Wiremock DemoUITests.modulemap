@@ -1,0 +1,6 @@
+framework module Pods_Wiremock_Demo_Wiremock_DemoUITests {
+  umbrella header "Pods-Wiremock Demo-Wiremock DemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

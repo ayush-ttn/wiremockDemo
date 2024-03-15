@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09BB4080C5E7CBB7A6228391 /* Pods_Wiremock_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330519F144CE5FED7432EA54 /* Pods_Wiremock_Demo.framework */; };
+		97CE1331790D5EE02DDE2D4A /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A17929D3B7E52A261A91680 /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework */; };
+		C1F4F6EAD83558F97C4B42EE /* Pods_Wiremock_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3150A2A6BC6AF26C4992E82 /* Pods_Wiremock_DemoTests.framework */; };
+		C737B5E72BA05A950042E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737B5E52BA05A950042E105 /* ProductCell.swift */; };
+		C737B5E82BA05A950042E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737B5E52BA05A950042E105 /* ProductCell.swift */; };
+		C737B5E92BA05A950042E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737B5E52BA05A950042E105 /* ProductCell.swift */; };
+		C7B080EA2BA02843006945AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B080E92BA02843006945AA /* AppDelegate.swift */; };
+		C7B080EC2BA02843006945AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B080EB2BA02843006945AA /* SceneDelegate.swift */; };
+		C7B080F12BA02843006945AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B080EF2BA02843006945AA /* Main.storyboard */; };
+		C7B080F32BA02845006945AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B080F22BA02845006945AA /* Assets.xcassets */; };
+		C7B080F62BA02845006945AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B080F42BA02845006945AA /* LaunchScreen.storyboard */; };
+		C7B081012BA02845006945AA /* Wiremock_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081002BA02845006945AA /* Wiremock_DemoTests.swift */; };
+		C7B0810B2BA02845006945AA /* Wiremock_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0810A2BA02845006945AA /* Wiremock_DemoUITests.swift */; };
+		C7B0810D2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0810C2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift */; };
+		C7B0811A2BA029F8006945AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081192BA029F8006945AA /* NetworkManager.swift */; };
+		C7B0811E2BA02A6C006945AA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0811D2BA02A6C006945AA /* Endpoints.swift */; };
+		C7B081202BA0319D006945AA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0811F2BA0319D006945AA /* Models.swift */; };
+		C7B081212BA0319D006945AA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0811F2BA0319D006945AA /* Models.swift */; };
+		C7B081222BA0319D006945AA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0811F2BA0319D006945AA /* Models.swift */; };
+		C7B081242BA0328B006945AA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081232BA0328B006945AA /* LoginVC.swift */; };
+		C7B081252BA0328B006945AA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081232BA0328B006945AA /* LoginVC.swift */; };
+		C7B081262BA0328B006945AA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081232BA0328B006945AA /* LoginVC.swift */; };
+		C7B0812A2BA032B8006945AA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081292BA032B8006945AA /* LoginViewModel.swift */; };
+		C7B0812B2BA032B8006945AA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081292BA032B8006945AA /* LoginViewModel.swift */; };
+		C7B0812C2BA032B8006945AA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081292BA032B8006945AA /* LoginViewModel.swift */; };
+		C7B0812E2BA032E0006945AA /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0812D2BA032E0006945AA /* ProductListVC.swift */; };
+		C7B0812F2BA032E0006945AA /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0812D2BA032E0006945AA /* ProductListVC.swift */; };
+		C7B081302BA032E0006945AA /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0812D2BA032E0006945AA /* ProductListVC.swift */; };
+		C7B081332BA032F3006945AA /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081322BA032F3006945AA /* ProductListViewModel.swift */; };
+		C7B081342BA032F3006945AA /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081322BA032F3006945AA /* ProductListViewModel.swift */; };
+		C7B081352BA032F3006945AA /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081322BA032F3006945AA /* ProductListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7B080FD2BA02845006945AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7B080DE2BA02843006945AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7B080E52BA02843006945AA;
+			remoteInfo = "Wiremock Demo";
+		};
+		C7B081072BA02845006945AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7B080DE2BA02843006945AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7B080E52BA02843006945AA;
+			remoteInfo = "Wiremock Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A17929D3B7E52A261A91680 /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wiremock_Demo_Wiremock_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235F154C3D3495A30AA68E97 /* Pods-Wiremock Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock Demo.release.xcconfig"; path = "Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo.release.xcconfig"; sourceTree = "<group>"; };
+		330519F144CE5FED7432EA54 /* Pods_Wiremock_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wiremock_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE63F632429071535361C07 /* Pods-Wiremock Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock Demo.debug.xcconfig"; path = "Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF009E7D231F9BCCCA63FD2 /* Pods-Wiremock DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-Wiremock DemoTests/Pods-Wiremock DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F85FAEF1C00B7073BA66F9D /* Pods-Wiremock DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock DemoTests.release.xcconfig"; path = "Target Support Files/Pods-Wiremock DemoTests/Pods-Wiremock DemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C737B5E52BA05A950042E105 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C7B080E62BA02843006945AA /* Wiremock Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wiremock Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B080E92BA02843006945AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7B080EB2BA02843006945AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C7B080F02BA02843006945AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7B080F22BA02845006945AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7B080F52BA02845006945AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7B080F72BA02845006945AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B080FC2BA02845006945AA /* Wiremock DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiremock DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B081002BA02845006945AA /* Wiremock_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiremock_DemoTests.swift; sourceTree = "<group>"; };
+		C7B081062BA02845006945AA /* Wiremock DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiremock DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B0810A2BA02845006945AA /* Wiremock_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiremock_DemoUITests.swift; sourceTree = "<group>"; };
+		C7B0810C2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiremock_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7B081192BA029F8006945AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C7B0811D2BA02A6C006945AA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		C7B0811F2BA0319D006945AA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C7B081232BA0328B006945AA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C7B081292BA032B8006945AA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C7B0812D2BA032E0006945AA /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
+		C7B081322BA032F3006945AA /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		D3150A2A6BC6AF26C4992E82 /* Pods_Wiremock_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wiremock_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A6BC94A365DEA78B14CC7E /* Pods-Wiremock Demo-Wiremock DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock Demo-Wiremock DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-Wiremock Demo-Wiremock DemoUITests/Pods-Wiremock Demo-Wiremock DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FACFC81089A6CCB9A7E7B67D /* Pods-Wiremock Demo-Wiremock DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock Demo-Wiremock DemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wiremock Demo-Wiremock DemoUITests/Pods-Wiremock Demo-Wiremock DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7B080E32BA02843006945AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BB4080C5E7CBB7A6228391 /* Pods_Wiremock_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B080F92BA02845006945AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F4F6EAD83558F97C4B42EE /* Pods_Wiremock_DemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B081032BA02845006945AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97CE1331790D5EE02DDE2D4A /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03EDBF477BB77078556C12A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				330519F144CE5FED7432EA54 /* Pods_Wiremock_Demo.framework */,
+				1A17929D3B7E52A261A91680 /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework */,
+				D3150A2A6BC6AF26C4992E82 /* Pods_Wiremock_DemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7F1EEB17FCCDA033916F381 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BE63F632429071535361C07 /* Pods-Wiremock Demo.debug.xcconfig */,
+				235F154C3D3495A30AA68E97 /* Pods-Wiremock Demo.release.xcconfig */,
+				FACFC81089A6CCB9A7E7B67D /* Pods-Wiremock Demo-Wiremock DemoUITests.debug.xcconfig */,
+				E0A6BC94A365DEA78B14CC7E /* Pods-Wiremock Demo-Wiremock DemoUITests.release.xcconfig */,
+				5BF009E7D231F9BCCCA63FD2 /* Pods-Wiremock DemoTests.debug.xcconfig */,
+				6F85FAEF1C00B7073BA66F9D /* Pods-Wiremock DemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7B080DD2BA02843006945AA = {
+			isa = PBXGroup;
+			children = (
+				C7B080E82BA02843006945AA /* Wiremock Demo */,
+				C7B080FF2BA02845006945AA /* Wiremock DemoTests */,
+				C7B081092BA02845006945AA /* Wiremock DemoUITests */,
+				C7B080E72BA02843006945AA /* Products */,
+				A7F1EEB17FCCDA033916F381 /* Pods */,
+				03EDBF477BB77078556C12A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7B080E72BA02843006945AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7B080E62BA02843006945AA /* Wiremock Demo.app */,
+				C7B080FC2BA02845006945AA /* Wiremock DemoTests.xctest */,
+				C7B081062BA02845006945AA /* Wiremock DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7B080E82BA02843006945AA /* Wiremock Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C7B080E92BA02843006945AA /* AppDelegate.swift */,
+				C7B080EB2BA02843006945AA /* SceneDelegate.swift */,
+				C7B0811F2BA0319D006945AA /* Models.swift */,
+				C7B0811C2BA02A5E006945AA /* Network */,
+				C7B080EF2BA02843006945AA /* Main.storyboard */,
+				C7B081272BA03297006945AA /* Screens */,
+				C7B080F22BA02845006945AA /* Assets.xcassets */,
+				C7B080F42BA02845006945AA /* LaunchScreen.storyboard */,
+				C7B080F72BA02845006945AA /* Info.plist */,
+			);
+			path = "Wiremock Demo";
+			sourceTree = "<group>";
+		};
+		C7B080FF2BA02845006945AA /* Wiremock DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7B081002BA02845006945AA /* Wiremock_DemoTests.swift */,
+			);
+			path = "Wiremock DemoTests";
+			sourceTree = "<group>";
+		};
+		C7B081092BA02845006945AA /* Wiremock DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C7B0810A2BA02845006945AA /* Wiremock_DemoUITests.swift */,
+				C7B0810C2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift */,
+			);
+			path = "Wiremock DemoUITests";
+			sourceTree = "<group>";
+		};
+		C7B0811C2BA02A5E006945AA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C7B081192BA029F8006945AA /* NetworkManager.swift */,
+				C7B0811D2BA02A6C006945AA /* Endpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C7B081272BA03297006945AA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C7B081282BA032A5006945AA /* Login */,
+				C7B081312BA032E3006945AA /* Product List */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C7B081282BA032A5006945AA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C7B081232BA0328B006945AA /* LoginVC.swift */,
+				C7B081292BA032B8006945AA /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C7B081312BA032E3006945AA /* Product List */ = {
+			isa = PBXGroup;
+			children = (
+				C7B0812D2BA032E0006945AA /* ProductListVC.swift */,
+				C737B5E52BA05A950042E105 /* ProductCell.swift */,
+				C7B081322BA032F3006945AA /* ProductListViewModel.swift */,
+			);
+			path = "Product List";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7B080E52BA02843006945AA /* Wiremock Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B081102BA02845006945AA /* Build configuration list for PBXNativeTarget "Wiremock Demo" */;
+			buildPhases = (
+				63D00DD1ADD65E846893F046 /* [CP] Check Pods Manifest.lock */,
+				C7B080E22BA02843006945AA /* Sources */,
+				C7B080E32BA02843006945AA /* Frameworks */,
+				C7B080E42BA02843006945AA /* Resources */,
+				375DC4449D3BB19084497CE4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wiremock Demo";
+			productName = "Wiremock Demo";
+			productReference = C7B080E62BA02843006945AA /* Wiremock Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7B080FB2BA02845006945AA /* Wiremock DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B081132BA02845006945AA /* Build configuration list for PBXNativeTarget "Wiremock DemoTests" */;
+			buildPhases = (
+				CF9890D8C789041F901EC4E2 /* [CP] Check Pods Manifest.lock */,
+				C7B080F82BA02845006945AA /* Sources */,
+				C7B080F92BA02845006945AA /* Frameworks */,
+				C7B080FA2BA02845006945AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7B080FE2BA02845006945AA /* PBXTargetDependency */,
+			);
+			name = "Wiremock DemoTests";
+			productName = "Wiremock DemoTests";
+			productReference = C7B080FC2BA02845006945AA /* Wiremock DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7B081052BA02845006945AA /* Wiremock DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B081162BA02845006945AA /* Build configuration list for PBXNativeTarget "Wiremock DemoUITests" */;
+			buildPhases = (
+				226B11446928B1248BCB797C /* [CP] Check Pods Manifest.lock */,
+				C7B081022BA02845006945AA /* Sources */,
+				C7B081032BA02845006945AA /* Frameworks */,
+				C7B081042BA02845006945AA /* Resources */,
+				D20E15AB2158DBD4DA985912 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7B081082BA02845006945AA /* PBXTargetDependency */,
+			);
+			name = "Wiremock DemoUITests";
+			productName = "Wiremock DemoUITests";
+			productReference = C7B081062BA02845006945AA /* Wiremock DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7B080DE2BA02843006945AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C7B080E52BA02843006945AA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					C7B080FB2BA02845006945AA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C7B080E52BA02843006945AA;
+					};
+					C7B081052BA02845006945AA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C7B080E52BA02843006945AA;
+					};
+				};
+			};
+			buildConfigurationList = C7B080E12BA02843006945AA /* Build configuration list for PBXProject "Wiremock Demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7B080DD2BA02843006945AA;
+			productRefGroup = C7B080E72BA02843006945AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7B080E52BA02843006945AA /* Wiremock Demo */,
+				C7B080FB2BA02845006945AA /* Wiremock DemoTests */,
+				C7B081052BA02845006945AA /* Wiremock DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7B080E42BA02843006945AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B080F62BA02845006945AA /* LaunchScreen.storyboard in Resources */,
+				C7B080F32BA02845006945AA /* Assets.xcassets in Resources */,
+				C7B080F12BA02843006945AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B080FA2BA02845006945AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B081042BA02845006945AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		226B11446928B1248BCB797C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wiremock Demo-Wiremock DemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		375DC4449D3BB19084497CE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63D00DD1ADD65E846893F046 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wiremock Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9890D8C789041F901EC4E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wiremock DemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D20E15AB2158DBD4DA985912 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo-Wiremock DemoUITests/Pods-Wiremock Demo-Wiremock DemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo-Wiremock DemoUITests/Pods-Wiremock Demo-Wiremock DemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo-Wiremock DemoUITests/Pods-Wiremock Demo-Wiremock DemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7B080E22BA02843006945AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B0811A2BA029F8006945AA /* NetworkManager.swift in Sources */,
+				C7B080EA2BA02843006945AA /* AppDelegate.swift in Sources */,
+				C7B081242BA0328B006945AA /* LoginVC.swift in Sources */,
+				C7B081202BA0319D006945AA /* Models.swift in Sources */,
+				C7B0812E2BA032E0006945AA /* ProductListVC.swift in Sources */,
+				C7B081332BA032F3006945AA /* ProductListViewModel.swift in Sources */,
+				C7B080EC2BA02843006945AA /* SceneDelegate.swift in Sources */,
+				C737B5E72BA05A950042E105 /* ProductCell.swift in Sources */,
+				C7B0811E2BA02A6C006945AA /* Endpoints.swift in Sources */,
+				C7B0812A2BA032B8006945AA /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B080F82BA02845006945AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B0812F2BA032E0006945AA /* ProductListVC.swift in Sources */,
+				C7B0812B2BA032B8006945AA /* LoginViewModel.swift in Sources */,
+				C7B081342BA032F3006945AA /* ProductListViewModel.swift in Sources */,
+				C7B081012BA02845006945AA /* Wiremock_DemoTests.swift in Sources */,
+				C7B081212BA0319D006945AA /* Models.swift in Sources */,
+				C737B5E82BA05A950042E105 /* ProductCell.swift in Sources */,
+				C7B081252BA0328B006945AA /* LoginVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B081022BA02845006945AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B081222BA0319D006945AA /* Models.swift in Sources */,
+				C7B0810D2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift in Sources */,
+				C7B081302BA032E0006945AA /* ProductListVC.swift in Sources */,
+				C7B081352BA032F3006945AA /* ProductListViewModel.swift in Sources */,
+				C7B081262BA0328B006945AA /* LoginVC.swift in Sources */,
+				C737B5E92BA05A950042E105 /* ProductCell.swift in Sources */,
+				C7B0812C2BA032B8006945AA /* LoginViewModel.swift in Sources */,
+				C7B0810B2BA02845006945AA /* Wiremock_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7B080FE2BA02845006945AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7B080E52BA02843006945AA /* Wiremock Demo */;
+			targetProxy = C7B080FD2BA02845006945AA /* PBXContainerItemProxy */;
+		};
+		C7B081082BA02845006945AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7B080E52BA02843006945AA /* Wiremock Demo */;
+			targetProxy = C7B081072BA02845006945AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7B080EF2BA02843006945AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B080F02BA02843006945AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7B080F42BA02845006945AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B080F52BA02845006945AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7B0810E2BA02845006945AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7B0810F2BA02845006945AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7B081112BA02845006945AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE63F632429071535361C07 /* Pods-Wiremock Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wiremock Demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wiremock-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7B081122BA02845006945AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235F154C3D3495A30AA68E97 /* Pods-Wiremock Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wiremock Demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wiremock-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C7B081142BA02845006945AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF009E7D231F9BCCCA63FD2 /* Pods-Wiremock DemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wiremock-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiremock Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wiremock Demo";
+			};
+			name = Debug;
+		};
+		C7B081152BA02845006945AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F85FAEF1C00B7073BA66F9D /* Pods-Wiremock DemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wiremock-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiremock Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wiremock Demo";
+			};
+			name = Release;
+		};
+		C7B081172BA02845006945AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FACFC81089A6CCB9A7E7B67D /* Pods-Wiremock Demo-Wiremock DemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wiremock-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wiremock Demo";
+			};
+			name = Debug;
+		};
+		C7B081182BA02845006945AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A6BC94A365DEA78B14CC7E /* Pods-Wiremock Demo-Wiremock DemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wiremock-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wiremock Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7B080E12BA02843006945AA /* Build configuration list for PBXProject "Wiremock Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B0810E2BA02845006945AA /* Debug */,
+				C7B0810F2BA02845006945AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B081102BA02845006945AA /* Build configuration list for PBXNativeTarget "Wiremock Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B081112BA02845006945AA /* Debug */,
+				C7B081122BA02845006945AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B081132BA02845006945AA /* Build configuration list for PBXNativeTarget "Wiremock DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B081142BA02845006945AA /* Debug */,
+				C7B081152BA02845006945AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B081162BA02845006945AA /* Build configuration list for PBXNativeTarget "Wiremock DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B081172BA02845006945AA /* Debug */,
+				C7B081182BA02845006945AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7B080DE2BA02843006945AA /* Project object */;
+}

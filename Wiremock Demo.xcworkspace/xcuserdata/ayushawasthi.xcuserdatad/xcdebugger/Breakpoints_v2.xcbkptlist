@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B93A0EE7-E66E-415E-A7CB-7CB3401ACBAD"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C7A0B06-85BD-4F4A-ABE7-B15D4CE3B170"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wiremock Demo/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "hitAPI(endpoint:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C7A0B06-85BD-4F4A-ABE7-B15D4CE3B170 - 82442efa20a87989"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_0_0, Alamofire.AFError&gt;) -&gt; () in static Wiremock_Demo.NetworkManager.hitAPI&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(endpoint: Wiremock_Demo.Endpoints, completion: Swift.Optional&lt;(Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "Wiremock Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushawasthi/Developer/iOS/Wiremock%20Demo/Wiremock%20Demo/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "548">
+               </Location>
+               <Location
+                  uuid = "8C7A0B06-85BD-4F4A-ABE7-B15D4CE3B170 - 82442efa20a87989"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_0_0, Alamofire.AFError&gt;) -&gt; () in static Wiremock_Demo.NetworkManager.hitAPI&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(endpoint: Wiremock_Demo.Endpoints, completion: Swift.Optional&lt;(Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "Wiremock Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushawasthi/Developer/iOS/Wiremock%20Demo/Wiremock%20Demo/Network/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "808">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60D19C50-E292-4EFD-A541-89CC0E10E909"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wiremock Demo/Network/Endpoints.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "asURLRequest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "60D19C50-E292-4EFD-A541-89CC0E10E909 - 37b727fcbdcafd5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Wiremock_Demo.Endpoints.asURLRequest() throws -&gt; Foundation.URLRequest"
+                  moduleName = "Wiremock Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushawasthi/Developer/iOS/Wiremock%20Demo/Wiremock%20Demo/Network/Endpoints.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "1840">
+               </Location>
+               <Location
+                  uuid = "60D19C50-E292-4EFD-A541-89CC0E10E909 - 37b727fcbdcafd5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Wiremock_Demo.Endpoints.asURLRequest() throws -&gt; Foundation.URLRequest"
+                  moduleName = "Wiremock Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushawasthi/Developer/iOS/Wiremock%20Demo/Wiremock%20Demo/Network/Endpoints.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "2156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
