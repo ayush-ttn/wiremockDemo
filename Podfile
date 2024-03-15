@@ -4,9 +4,9 @@ platform :ios, '8.0'
 target 'Wiremock Demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod "Alamofire"
-  pod "AlamofireImage"
-  pod "MBProgressHUD"
+#  pod "Alamofire"
+#  pod "AlamofireImage"
+#  pod "MBProgressHUD"
   # Pods for Wiremock Demo
 
   target 'Wiremock DemoTests' do

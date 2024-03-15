@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Alamofire
+//import Alamofire
 
 class NetworkManager: NSObject {
     enum Errors: Error {
@@ -17,7 +17,7 @@ class NetworkManager: NSObject {
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
           guard let data = data else {
-//              completion?(.failure(error))
+              completion?(.failure(Errors.requestFailed))
             return
           }
             do {

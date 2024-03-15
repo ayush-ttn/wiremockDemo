@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import MBProgressHUD
+//import MBProgressHUD
 
 class LoginVC: UIViewController {
     @IBOutlet var usernameTextField: UITextField! {
@@ -50,10 +50,10 @@ class LoginVC: UIViewController {
                   present(alert, animated: true)
             return
         }
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+//        MBProgressHUD.showAdded(to: self.view, animated: true)
         viewModel.login(username: username, password: password) { isSuccess in
             DispatchQueue.main.async {
-                MBProgressHUD.hide(for: self.view, animated: true)
+//                MBProgressHUD.hide(for: self.view, animated: true)
                 if isSuccess {
                     UserDefaults.standard.setValue(true, forKey: "loggedIn")
                     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabbarVC")

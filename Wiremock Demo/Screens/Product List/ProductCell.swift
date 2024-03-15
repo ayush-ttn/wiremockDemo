@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AlamofireImage
+//import AlamofireImage
 
 class ProductCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
@@ -20,7 +20,7 @@ class ProductCell: UITableViewCell {
     }
     override func prepareForReuse() {
         super.prepareForReuse()
-        thumbImageView.af.cancelImageRequest()
+//        thumbImageView.af.cancelImageRequest()
     }
     
     func show(product: Product) {
@@ -28,7 +28,7 @@ class ProductCell: UITableViewCell {
         descriptionLabel.text = product.description
         priceLabel.text = "$\(product.price)"
         if let url = URL(string: product.thumbnail) {
-            thumbImageView.af.setImage(withURL: url)
+//            thumbImageView.af.setImage(withURL: url)
         }
     }
 }

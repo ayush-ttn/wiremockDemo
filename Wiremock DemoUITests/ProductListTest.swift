@@ -11,27 +11,37 @@ final class ProductListTest: XCTestCase {
     override class func setUp() {
         super.setUp()
     }
-    func testProucts() throws {
-        let app = XCUIApplication()
-        app.launch()
+    func testProucts() async throws {
+//        let username = "user_001"
+//        let password = "Qwerty@123"
+        
+        let username = "bleveragei"
+        let password = "UZGAiqPqWQHQ"
+        
+        DispatchQueue.main.async {
+            let app = XCUIApplication()
+            app.launch()
 
-        login(app: app)
-        sleep(1)
-        XCTAssertTrue(app.tables.cells.count > 0)
+            self.login(app: app, username: username, password: password)
+            
+            self.waitforInstance(app: app)
+
+            sleep(5)
+            
+            XCTAssertTrue(app.tables.cells.count > 0)
+        }
     }
-    func login(app: XCUIApplication) {
+    func login(app: XCUIApplication, username: String, password: String) {
         let usernameTextfield = app.textFields["username"]
         usernameTextfield.tap()
-        usernameTextfield.typeText("atuny0")
+        usernameTextfield.typeText(username)
         
         let passwordTextField = app.secureTextFields["password"]
         passwordTextField.tap()
-        passwordTextField.typeText("9uQFF1Lh")
+        passwordTextField.typeText(password)
         
         let submitBtn = app.buttons["submit"]
         submitBtn.tap()
-        
-        waitforInstance(app: app)
     }
     @discardableResult
     func waitforInstance(app: XCUIApplication) -> Bool {

@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import Alamofire
+//import Alamofire
 
-enum Endpoints: URLRequestConvertible {
+enum Endpoints {
     enum Errors: Error, CustomStringConvertible {
         case invalidURL
         var description: String {
@@ -22,7 +22,11 @@ enum Endpoints: URLRequestConvertible {
     case listProducts
     
     var baseURL: String {
-        "dummyjson.com"
+        if StartupUtils.shouldRunLocal() {
+            return "localhost"
+        } else {
+            return "dummyjson.com"
+        }
     }
     
     var endpoint: String {
@@ -34,12 +38,12 @@ enum Endpoints: URLRequestConvertible {
         }
     }
     
-    var method: HTTPMethod {
+    var method: String {
         switch self {
         case .login:
-            return .post
+            return "POST"
         case .listProducts:
-            return .get
+            return "GET"
         }
     }
     
@@ -55,18 +59,27 @@ enum Endpoints: URLRequestConvertible {
     
     func asURLRequest() throws -> URLRequest {
         var components = URLComponents()
-        components.scheme = "https"
-            components.host = baseURL
-            components.path = endpoint
+        if StartupUtils.shouldRunLocal() {
+            components.scheme = "http"
+            components.port = 9999
+        } else {
+            components.scheme = "https"
+        }
+        
+        components.host = baseURL
+        components.path = endpoint
         if let params {
-            components.queryItems = params.compactMap({URLQueryItem(name: $0.key, value: $0.value)})
+            var queryItems = [URLQueryItem(name: "username", value: params["username"]), URLQueryItem(name: "password", value: params["password"])]
+            components.queryItems = queryItems
+            
+//            components.queryItems = params.compactMap({URLQueryItem(name: $0.key, value: $0.value)})
         }
         guard let url = components.url else {
             throw Errors.invalidURL
         }
         var request = URLRequest(url: url)
-        request.httpMethod = method.rawValue
-        if method == .post {
+        request.httpMethod = method
+        if method == "POST" {
             request.httpBody = components.query?.data(using: .utf8)
         }
         return request

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import MBProgressHUD
+//import MBProgressHUD
 
 class ProductListVC: UIViewController {
     @IBOutlet var tableView: UITableView!
@@ -19,12 +19,12 @@ class ProductListVC: UIViewController {
                 self?.reloadData(success: isSuccess)
             }
         }
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+//        MBProgressHUD.showAdded(to: self.view, animated: true)
         viewModel.fetchProducts()
     }
     
     func reloadData(success: Bool) {
-        MBProgressHUD.hide(for: self.view, animated: true)
+//        MBProgressHUD.hide(for: self.view, animated: true)
         if success {
             tableView.reloadData()
         } else {

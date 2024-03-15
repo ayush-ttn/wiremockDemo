@@ -25,7 +25,7 @@ class ProductDetailsVC: UIViewController {
         descriptionLabel.text = product.description
         priceLabel.text = "$\(product.price)"
         if let url = URL(string: product.thumbnail) {
-            thumbImageView.af.setImage(withURL: url)
+//            thumbImageView.af.setImage(withURL: url)
         }
     }
 

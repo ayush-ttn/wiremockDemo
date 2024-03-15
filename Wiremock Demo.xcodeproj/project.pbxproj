@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		09BB4080C5E7CBB7A6228391 /* Pods_Wiremock_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330519F144CE5FED7432EA54 /* Pods_Wiremock_Demo.framework */; };
+		4B01C2222BA4A43800D052F2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01C2212BA4A43800D052F2 /* Utility.swift */; };
+		4B01C2232BA4A64D00D052F2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01C2212BA4A43800D052F2 /* Utility.swift */; };
+		4B01C2242BA4A64F00D052F2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01C2212BA4A43800D052F2 /* Utility.swift */; };
+		4B01C2262BA4A70E00D052F2 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01C2252BA4A70E00D052F2 /* TestUtils.swift */; };
+		4B01C2282BA4B2E700D052F2 /* APIMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01C2272BA4B2E700D052F2 /* APIMapping.swift */; };
+		4B01C22A2BA4B34100D052F2 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01C2292BA4B34100D052F2 /* TestFile.swift */; };
 		97CE1331790D5EE02DDE2D4A /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A17929D3B7E52A261A91680 /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework */; };
 		C1F4F6EAD83558F97C4B42EE /* Pods_Wiremock_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3150A2A6BC6AF26C4992E82 /* Pods_Wiremock_DemoTests.framework */; };
 		C702C5F12BA496330046A6A9 /* SettingsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C702C5F02BA496330046A6A9 /* SettingsVc.swift */; };
@@ -76,6 +82,10 @@
 		235F154C3D3495A30AA68E97 /* Pods-Wiremock Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock Demo.release.xcconfig"; path = "Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo.release.xcconfig"; sourceTree = "<group>"; };
 		330519F144CE5FED7432EA54 /* Pods_Wiremock_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wiremock_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE63F632429071535361C07 /* Pods-Wiremock Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock Demo.debug.xcconfig"; path = "Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		4B01C2212BA4A43800D052F2 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4B01C2252BA4A70E00D052F2 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		4B01C2272BA4B2E700D052F2 /* APIMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMapping.swift; sourceTree = "<group>"; };
+		4B01C2292BA4B34100D052F2 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 		5BF009E7D231F9BCCCA63FD2 /* Pods-Wiremock DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-Wiremock DemoTests/Pods-Wiremock DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F85FAEF1C00B7073BA66F9D /* Pods-Wiremock DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock DemoTests.release.xcconfig"; path = "Target Support Files/Pods-Wiremock DemoTests/Pods-Wiremock DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		C702C5F02BA496330046A6A9 /* SettingsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVc.swift; sourceTree = "<group>"; };
@@ -143,6 +153,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B01C2202BA4A42400D052F2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4B01C2212BA4A43800D052F2 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		A7F1EEB17FCCDA033916F381 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +207,7 @@
 		C7B080E82BA02843006945AA /* Wiremock Demo */ = {
 			isa = PBXGroup;
 			children = (
+				4B01C2202BA4A42400D052F2 /* Utility */,
 				C7B080E92BA02843006945AA /* AppDelegate.swift */,
 				C7B080EB2BA02843006945AA /* SceneDelegate.swift */,
 				C7B0811F2BA0319D006945AA /* Models.swift */,
@@ -215,6 +234,9 @@
 			children = (
 				C729DD782BA470C900BC5464 /* LoginTest.swift */,
 				C729DD832BA488FA00BC5464 /* ProductListTest.swift */,
+				4B01C2252BA4A70E00D052F2 /* TestUtils.swift */,
+				4B01C2272BA4B2E700D052F2 /* APIMapping.swift */,
+				4B01C2292BA4B34100D052F2 /* TestFile.swift */,
 			);
 			path = "Wiremock DemoUITests";
 			sourceTree = "<group>";
@@ -269,7 +291,6 @@
 				C7B080E22BA02843006945AA /* Sources */,
 				C7B080E32BA02843006945AA /* Frameworks */,
 				C7B080E42BA02843006945AA /* Resources */,
-				375DC4449D3BB19084497CE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,7 +328,6 @@
 				C7B081022BA02845006945AA /* Sources */,
 				C7B081032BA02845006945AA /* Frameworks */,
 				C7B081042BA02845006945AA /* Resources */,
-				D20E15AB2158DBD4DA985912 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,23 +432,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		375DC4449D3BB19084497CE4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		63D00DD1ADD65E846893F046 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,23 +476,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D20E15AB2158DBD4DA985912 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo-Wiremock DemoUITests/Pods-Wiremock Demo-Wiremock DemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo-Wiremock DemoUITests/Pods-Wiremock Demo-Wiremock DemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wiremock Demo-Wiremock DemoUITests/Pods-Wiremock Demo-Wiremock DemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -504,6 +490,7 @@
 				C7B081202BA0319D006945AA /* Models.swift in Sources */,
 				C7B0812E2BA032E0006945AA /* ProductListVC.swift in Sources */,
 				C7B081332BA032F3006945AA /* ProductListViewModel.swift in Sources */,
+				4B01C2222BA4A43800D052F2 /* Utility.swift in Sources */,
 				C7B080EC2BA02843006945AA /* SceneDelegate.swift in Sources */,
 				C737B5E72BA05A950042E105 /* ProductCell.swift in Sources */,
 				C729DD742BA466B500BC5464 /* ProductDetailsVC.swift in Sources */,
@@ -516,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B01C2242BA4A64F00D052F2 /* Utility.swift in Sources */,
 				C729DD7A2BA472BA00BC5464 /* NetworkManager.swift in Sources */,
 				C702C5F22BA496330046A6A9 /* SettingsVc.swift in Sources */,
 				C7B0812F2BA032E0006945AA /* ProductListVC.swift in Sources */,
@@ -537,15 +525,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C729DD7C2BA472C200BC5464 /* AppDelegate.swift in Sources */,
+				4B01C2282BA4B2E700D052F2 /* APIMapping.swift in Sources */,
 				C729DD802BA472E600BC5464 /* SceneDelegate.swift in Sources */,
 				C7B081222BA0319D006945AA /* Models.swift in Sources */,
 				C729DD7E2BA472D000BC5464 /* Endpoints.swift in Sources */,
 				C729DD752BA466C300BC5464 /* ProductDetailsVC.swift in Sources */,
+				4B01C2232BA4A64D00D052F2 /* Utility.swift in Sources */,
 				C729DD792BA470C900BC5464 /* LoginTest.swift in Sources */,
 				C729DD7B2BA472BB00BC5464 /* NetworkManager.swift in Sources */,
+				4B01C22A2BA4B34100D052F2 /* TestFile.swift in Sources */,
 				C7B081302BA032E0006945AA /* ProductListVC.swift in Sources */,
 				C729DD842BA488FA00BC5464 /* ProductListTest.swift in Sources */,
 				C7B081352BA032F3006945AA /* ProductListViewModel.swift in Sources */,
+				4B01C2262BA4A70E00D052F2 /* TestUtils.swift in Sources */,
 				C7B081262BA0328B006945AA /* LoginVC.swift in Sources */,
 				C737B5E92BA05A950042E105 /* ProductCell.swift in Sources */,
 				C7B0812C2BA032B8006945AA /* LoginViewModel.swift in Sources */,
@@ -640,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -697,7 +689,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -723,6 +715,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -752,6 +745,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
