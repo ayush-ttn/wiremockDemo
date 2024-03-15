@@ -55,22 +55,20 @@ enum Endpoints: URLRequestConvertible {
     
     func asURLRequest() throws -> URLRequest {
         var components = URLComponents()
-            components.scheme = "https"
+        components.scheme = "https"
             components.host = baseURL
             components.path = endpoint
-        if let params, method == .get {
+        if let params {
             components.queryItems = params.compactMap({URLQueryItem(name: $0.key, value: $0.value)})
         }
         guard let url = components.url else {
             throw Errors.invalidURL
         }
-        var request = try URLRequest(url: url, method: method)
-        request.method = method
-        if method == .post, let params {
-            let data = try? JSONSerialization.data(withJSONObject: params)
-            request.httpBody = data
+        var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
+        if method == .post {
+            request.httpBody = components.query?.data(using: .utf8)
         }
-        request.addValue("Content-Type", forHTTPHeaderField: "application/json")
         return request
     }
 }

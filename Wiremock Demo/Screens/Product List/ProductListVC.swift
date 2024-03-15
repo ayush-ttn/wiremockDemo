@@ -13,8 +13,11 @@ class ProductListVC: UIViewController {
     var viewModel = ProductListViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Products"
         viewModel.reloadData = {[weak self] isSuccess in
-            self?.reloadData(success: isSuccess)
+            DispatchQueue.main.async {
+                self?.reloadData(success: isSuccess)
+            }
         }
         MBProgressHUD.showAdded(to: self.view, animated: true)
         viewModel.fetchProducts()
@@ -48,4 +51,14 @@ extension ProductListVC: UITableViewDataSource {
         return cell
     }
     
+}
+extension ProductListVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let detailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProductDetailsVC") as? ProductDetailsVC, 
+        let product = viewModel.product(at: indexPath) else {
+            return
+        }
+        detailsVC.product = product
+        self.navigationController?.pushViewController(detailsVC, animated: true)
+    }
 }

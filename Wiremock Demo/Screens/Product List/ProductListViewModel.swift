@@ -19,7 +19,7 @@ class ProductListViewModel: NSObject {
             case .success(let success):
                 self.products = success.products
                 self.reloadData?(true)
-            case .failure(let failure):
+            case .failure:
                 self.reloadData?(false)
             }
         }

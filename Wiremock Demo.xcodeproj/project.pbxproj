@@ -10,6 +10,22 @@
 		09BB4080C5E7CBB7A6228391 /* Pods_Wiremock_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330519F144CE5FED7432EA54 /* Pods_Wiremock_Demo.framework */; };
 		97CE1331790D5EE02DDE2D4A /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A17929D3B7E52A261A91680 /* Pods_Wiremock_Demo_Wiremock_DemoUITests.framework */; };
 		C1F4F6EAD83558F97C4B42EE /* Pods_Wiremock_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3150A2A6BC6AF26C4992E82 /* Pods_Wiremock_DemoTests.framework */; };
+		C702C5F12BA496330046A6A9 /* SettingsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C702C5F02BA496330046A6A9 /* SettingsVc.swift */; };
+		C702C5F22BA496330046A6A9 /* SettingsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C702C5F02BA496330046A6A9 /* SettingsVc.swift */; };
+		C702C5F32BA496330046A6A9 /* SettingsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C702C5F02BA496330046A6A9 /* SettingsVc.swift */; };
+		C729DD742BA466B500BC5464 /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729DD732BA466B500BC5464 /* ProductDetailsVC.swift */; };
+		C729DD752BA466C300BC5464 /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729DD732BA466B500BC5464 /* ProductDetailsVC.swift */; };
+		C729DD762BA466C300BC5464 /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729DD732BA466B500BC5464 /* ProductDetailsVC.swift */; };
+		C729DD792BA470C900BC5464 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729DD782BA470C900BC5464 /* LoginTest.swift */; };
+		C729DD7A2BA472BA00BC5464 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081192BA029F8006945AA /* NetworkManager.swift */; };
+		C729DD7B2BA472BB00BC5464 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081192BA029F8006945AA /* NetworkManager.swift */; };
+		C729DD7C2BA472C200BC5464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B080E92BA02843006945AA /* AppDelegate.swift */; };
+		C729DD7D2BA472C200BC5464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B080E92BA02843006945AA /* AppDelegate.swift */; };
+		C729DD7E2BA472D000BC5464 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0811D2BA02A6C006945AA /* Endpoints.swift */; };
+		C729DD7F2BA472D100BC5464 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0811D2BA02A6C006945AA /* Endpoints.swift */; };
+		C729DD802BA472E600BC5464 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B080EB2BA02843006945AA /* SceneDelegate.swift */; };
+		C729DD812BA472E700BC5464 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B080EB2BA02843006945AA /* SceneDelegate.swift */; };
+		C729DD842BA488FA00BC5464 /* ProductListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729DD832BA488FA00BC5464 /* ProductListTest.swift */; };
 		C737B5E72BA05A950042E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737B5E52BA05A950042E105 /* ProductCell.swift */; };
 		C737B5E82BA05A950042E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737B5E52BA05A950042E105 /* ProductCell.swift */; };
 		C737B5E92BA05A950042E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737B5E52BA05A950042E105 /* ProductCell.swift */; };
@@ -19,8 +35,6 @@
 		C7B080F32BA02845006945AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B080F22BA02845006945AA /* Assets.xcassets */; };
 		C7B080F62BA02845006945AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B080F42BA02845006945AA /* LaunchScreen.storyboard */; };
 		C7B081012BA02845006945AA /* Wiremock_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081002BA02845006945AA /* Wiremock_DemoTests.swift */; };
-		C7B0810B2BA02845006945AA /* Wiremock_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0810A2BA02845006945AA /* Wiremock_DemoUITests.swift */; };
-		C7B0810D2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0810C2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift */; };
 		C7B0811A2BA029F8006945AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B081192BA029F8006945AA /* NetworkManager.swift */; };
 		C7B0811E2BA02A6C006945AA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0811D2BA02A6C006945AA /* Endpoints.swift */; };
 		C7B081202BA0319D006945AA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B0811F2BA0319D006945AA /* Models.swift */; };
@@ -64,6 +78,10 @@
 		3BE63F632429071535361C07 /* Pods-Wiremock Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock Demo.debug.xcconfig"; path = "Target Support Files/Pods-Wiremock Demo/Pods-Wiremock Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		5BF009E7D231F9BCCCA63FD2 /* Pods-Wiremock DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-Wiremock DemoTests/Pods-Wiremock DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F85FAEF1C00B7073BA66F9D /* Pods-Wiremock DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wiremock DemoTests.release.xcconfig"; path = "Target Support Files/Pods-Wiremock DemoTests/Pods-Wiremock DemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C702C5F02BA496330046A6A9 /* SettingsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVc.swift; sourceTree = "<group>"; };
+		C729DD732BA466B500BC5464 /* ProductDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
+		C729DD782BA470C900BC5464 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
+		C729DD832BA488FA00BC5464 /* ProductListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTest.swift; sourceTree = "<group>"; };
 		C737B5E52BA05A950042E105 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C7B080E62BA02843006945AA /* Wiremock Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wiremock Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B080E92BA02843006945AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,8 +93,6 @@
 		C7B080FC2BA02845006945AA /* Wiremock DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiremock DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B081002BA02845006945AA /* Wiremock_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiremock_DemoTests.swift; sourceTree = "<group>"; };
 		C7B081062BA02845006945AA /* Wiremock DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiremock DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7B0810A2BA02845006945AA /* Wiremock_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiremock_DemoUITests.swift; sourceTree = "<group>"; };
-		C7B0810C2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiremock_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7B081192BA029F8006945AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C7B0811D2BA02A6C006945AA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		C7B0811F2BA0319D006945AA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -140,6 +156,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C729DD772BA466E400BC5464 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C729DD732BA466B500BC5464 /* ProductDetailsVC.swift */,
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
 		C7B080DD2BA02843006945AA = {
 			isa = PBXGroup;
 			children = (
@@ -189,8 +213,8 @@
 		C7B081092BA02845006945AA /* Wiremock DemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C7B0810A2BA02845006945AA /* Wiremock_DemoUITests.swift */,
-				C7B0810C2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift */,
+				C729DD782BA470C900BC5464 /* LoginTest.swift */,
+				C729DD832BA488FA00BC5464 /* ProductListTest.swift */,
 			);
 			path = "Wiremock DemoUITests";
 			sourceTree = "<group>";
@@ -209,6 +233,8 @@
 			children = (
 				C7B081282BA032A5006945AA /* Login */,
 				C7B081312BA032E3006945AA /* Product List */,
+				C729DD772BA466E400BC5464 /* ProductDetails */,
+				C702C5F02BA496330046A6A9 /* SettingsVc.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -226,8 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				C7B0812D2BA032E0006945AA /* ProductListVC.swift */,
-				C737B5E52BA05A950042E105 /* ProductCell.swift */,
 				C7B081322BA032F3006945AA /* ProductListViewModel.swift */,
+				C737B5E52BA05A950042E105 /* ProductCell.swift */,
 			);
 			path = "Product List";
 			sourceTree = "<group>";
@@ -472,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B0811A2BA029F8006945AA /* NetworkManager.swift in Sources */,
+				C702C5F12BA496330046A6A9 /* SettingsVc.swift in Sources */,
 				C7B080EA2BA02843006945AA /* AppDelegate.swift in Sources */,
 				C7B081242BA0328B006945AA /* LoginVC.swift in Sources */,
 				C7B081202BA0319D006945AA /* Models.swift in Sources */,
@@ -479,6 +506,7 @@
 				C7B081332BA032F3006945AA /* ProductListViewModel.swift in Sources */,
 				C7B080EC2BA02843006945AA /* SceneDelegate.swift in Sources */,
 				C737B5E72BA05A950042E105 /* ProductCell.swift in Sources */,
+				C729DD742BA466B500BC5464 /* ProductDetailsVC.swift in Sources */,
 				C7B0811E2BA02A6C006945AA /* Endpoints.swift in Sources */,
 				C7B0812A2BA032B8006945AA /* LoginViewModel.swift in Sources */,
 			);
@@ -488,13 +516,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C729DD7A2BA472BA00BC5464 /* NetworkManager.swift in Sources */,
+				C702C5F22BA496330046A6A9 /* SettingsVc.swift in Sources */,
 				C7B0812F2BA032E0006945AA /* ProductListVC.swift in Sources */,
+				C729DD762BA466C300BC5464 /* ProductDetailsVC.swift in Sources */,
 				C7B0812B2BA032B8006945AA /* LoginViewModel.swift in Sources */,
 				C7B081342BA032F3006945AA /* ProductListViewModel.swift in Sources */,
 				C7B081012BA02845006945AA /* Wiremock_DemoTests.swift in Sources */,
 				C7B081212BA0319D006945AA /* Models.swift in Sources */,
 				C737B5E82BA05A950042E105 /* ProductCell.swift in Sources */,
+				C729DD7D2BA472C200BC5464 /* AppDelegate.swift in Sources */,
 				C7B081252BA0328B006945AA /* LoginVC.swift in Sources */,
+				C729DD7F2BA472D100BC5464 /* Endpoints.swift in Sources */,
+				C729DD812BA472E700BC5464 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,14 +536,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C729DD7C2BA472C200BC5464 /* AppDelegate.swift in Sources */,
+				C729DD802BA472E600BC5464 /* SceneDelegate.swift in Sources */,
 				C7B081222BA0319D006945AA /* Models.swift in Sources */,
-				C7B0810D2BA02845006945AA /* Wiremock_DemoUITestsLaunchTests.swift in Sources */,
+				C729DD7E2BA472D000BC5464 /* Endpoints.swift in Sources */,
+				C729DD752BA466C300BC5464 /* ProductDetailsVC.swift in Sources */,
+				C729DD792BA470C900BC5464 /* LoginTest.swift in Sources */,
+				C729DD7B2BA472BB00BC5464 /* NetworkManager.swift in Sources */,
 				C7B081302BA032E0006945AA /* ProductListVC.swift in Sources */,
+				C729DD842BA488FA00BC5464 /* ProductListTest.swift in Sources */,
 				C7B081352BA032F3006945AA /* ProductListViewModel.swift in Sources */,
 				C7B081262BA0328B006945AA /* LoginVC.swift in Sources */,
 				C737B5E92BA05A950042E105 /* ProductCell.swift in Sources */,
 				C7B0812C2BA032B8006945AA /* LoginViewModel.swift in Sources */,
-				C7B0810B2BA02845006945AA /* Wiremock_DemoUITests.swift in Sources */,
+				C702C5F32BA496330046A6A9 /* SettingsVc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +773,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -753,6 +794,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -772,6 +814,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Wiremock-DemoUITests";
@@ -790,6 +833,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Wiremock-DemoUITests";

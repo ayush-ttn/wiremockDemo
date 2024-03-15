@@ -5,9 +5,6 @@
 //  Created by Ayush Awasthi on 12/03/24.
 //
 
-//Showing Recent Errors Only
-//SDK does not contain 'libarclite' at the path '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a'; try increasing the minimum deployment target
-
 
 import UIKit
 
@@ -38,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension UIViewController {
-    var window: UIWindow? {
+    public var window: UIWindow? {
         if #available(iOS 13, *) {
             guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                 let delegate = windowScene.delegate as? SceneDelegate, let window = delegate.window else { return nil }

@@ -11,9 +11,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    var isLoggedin: Bool {
-        UserDefaults.standard.bool(forKey: "loggedIn")
-    }
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -27,12 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
         self.window = window
-        if isLoggedin {
-//            let vm = ProductListViewModel()
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabbarVC")
-            window.rootViewController = vc
-            window.makeKeyAndVisible()
-        } else {
+        
             let vm = LoginViewModel()
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginVC") { coder in
                 return LoginVC(viewModel: vm, coder: coder)
@@ -40,7 +32,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             window.rootViewController = vc
             window.makeKeyAndVisible()
-        }
         window.makeKeyAndVisible()
     }
 

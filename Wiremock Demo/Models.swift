@@ -33,3 +33,9 @@ struct Product: Codable {
 struct ProductResponse: Codable {
     let products: [Product]
 }
+extension UIView {
+    public func setAutomationId(_ id: String) {
+        self.isAccessibilityElement     = true
+        self.accessibilityIdentifier    = id
+    }
+}

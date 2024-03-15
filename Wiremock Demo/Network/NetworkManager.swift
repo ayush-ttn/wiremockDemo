@@ -13,18 +13,22 @@ class NetworkManager: NSObject {
         case requestFailed
     }
     static func hitAPI<ModelClass: Codable>(endpoint: Endpoints, completion: ((Result<ModelClass, Error>) -> Void)?) {
-        AF.request(endpoint)
-            .validate()
-            .responseDecodable { (response: DataResponse<ModelClass, AFError>) in
-                if let value = response.value {
-                    completion?(.success(value))
-                } else {
-                    if let error = response.error {
-                        completion?(.failure(error))
-                    } else {
-                        completion?(.failure(Errors.requestFailed))
-                    }
-                }
+        var request = try! endpoint.asURLRequest()
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+//              completion?(.failure(error))
+            return
+          }
+            do {
+                let obj = try JSONDecoder().decode(ModelClass.self, from: data)
+                completion?(.success(obj))
+            } catch {
+                completion?(.failure(error))
             }
+        }
+
+        task.resume()
+
     }
 }

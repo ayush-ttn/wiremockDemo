@@ -9,9 +9,22 @@ import UIKit
 import MBProgressHUD
 
 class LoginVC: UIViewController {
-    @IBOutlet var usernameTextField: UITextField!
-    @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var usernameTextField: UITextField! {
+        didSet {
+            usernameTextField.setAutomationId("username")
+        }
+    }
+    @IBOutlet var passwordTextField: UITextField! {
+        didSet {
+            passwordTextField.setAutomationId("password")
+        }
+    }
     
+    @IBOutlet var submitButton: UIButton! {
+        didSet {
+            submitButton.setAutomationId("submit")
+        }
+    }
     
     let viewModel: LoginViewModel
     init?(viewModel: LoginViewModel, coder: NSCoder) {
@@ -39,15 +52,18 @@ class LoginVC: UIViewController {
         }
         MBProgressHUD.showAdded(to: self.view, animated: true)
         viewModel.login(username: username, password: password) { isSuccess in
-            MBProgressHUD.hide(for: self.view, animated: true)
-            if isSuccess {
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabbarVC")
-                self.window?.rootViewController = vc
-            } else {
-                let alert = UIAlertController(title: "Error", message: "Login failed!", preferredStyle: .alert)
-                let okBtn = UIAlertAction(title: "OK", style: .default)
-                alert.addAction(okBtn)
-                self.present(alert, animated: true)
+            DispatchQueue.main.async {
+                MBProgressHUD.hide(for: self.view, animated: true)
+                if isSuccess {
+                    UserDefaults.standard.setValue(true, forKey: "loggedIn")
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabbarVC")
+                    self.window?.rootViewController = vc
+                } else {
+                    let alert = UIAlertController(title: "Error", message: "Login failed!", preferredStyle: .alert)
+                    let okBtn = UIAlertAction(title: "OK", style: .default)
+                    alert.addAction(okBtn)
+                    self.present(alert, animated: true)
+                }
             }
         }
     }
